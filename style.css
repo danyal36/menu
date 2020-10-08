@@ -117,7 +117,7 @@ div.navContainer {
 }
 
 
-/* If the screen size is 601px wide or more,
+/* If the screen size is 1450px wide or more,
     set the nav bar and text to respective */
 
 @media screen and (min-width: 1450px) {
@@ -130,10 +130,19 @@ div.navContainer {
     div.card {
         font-size: 1em;
     }
+    div.postTitle {
+        font-size: 0.5em;
+    }
+    div.postDesc {
+        font-size: 0.5em;
+    }
+    div.blogs {
+        margin-left: 20%;
+    }
 }
 
 
-/* If the screen size is 600px wide or less,
+/* If the screen size is 1450px wide or less,
     set the nav bar and text to respective*/
 
 @media screen and (max-width: 1450px) {
@@ -152,6 +161,18 @@ div.navContainer {
     }
     button.download {
         width: 50%;
+    }
+    div.postTitle {
+        font-size: 0.4em;
+    }
+    div.postDesc {
+        font-size: 0.4em;
+    }
+    div.blogs {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+    div.blogs {
+        margin-left: 16%;
     }
 }
 
@@ -423,29 +444,313 @@ option {
 }
 
 .weeklyFeatures {
-    background-color: teal;
-    position: relative;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 7%;
+    width: 100%;
+    display: grid;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    color: white;
-    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .weeklyTitle {
-    position: absolute;
     top: 15%;
     left: 25%;
     right: 25%;
+    margin-bottom: 4%;
     font-size: 1.5em;
     color: #18181C;
 }
 
+.blocks {
+    background-color: white;
+    width: 100%;
+}
+
+#dealimg {
+    min-width: 260px;
+    max-width: 360px;
+    margin-top: 2px;
+    margin-left: 2px;
+    width: 100%;
+    height: auto;
+}
+
+.detail {
+    color: black;
+    display: grid;
+    justify-content: center;
+    margin-left: 18px;
+    margin-right: 18px;
+    text-align: left;
+}
+
+.dealimage {
+    grid-column: 1;
+    width: 100%;
+    height: 50%;
+}
+
+.dealInfo {
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.styleHr {
+    border-top: 1px dotted #8c8b8b;
+    color: #D9DFEF;
+    width: auto;
+    max-width: 100%;
+}
+
+.container1 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.card2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    align-items: center;
+    background-color: #F1F6FF;
+    color: #18181C;
+    border-radius: 6px;
+    min-width: 300px;
+    max-width: 400px;
+    width: auto;
+    height: auto;
+}
+
 .priceCards {
-    background-color: red;
-    position: absolute;
-    justify-content: flex-start;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
     top: 30%;
-    width: 75%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-wrap: wrap;
+}
+
+.blogSection {
+    text-align: center;
+}
+
+.blogTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    left: 25%;
+    right: 25%;
+    margin-bottom: 4%;
+    margin-top: 8%;
+    font-size: 1.7em;
+    color: #18181C;
+}
+
+.blogs {
+    width: 60%;
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.blogs>div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.blog1 {
+    display: flex;
+}
+
+.postPic {
+    width: 49%;
+    height: 100%;
+    margin-left: 1%;
+    /* background-color: white; */
+    /* margin-bottom: -1%; */
+}
+
+#post1 {
+    max-width: 100%;
+    object-fit: cover;
+    min-height: 170px;
+}
+
+.postDes {
+    background-color: white;
+    max-width: 48%;
+    width: auto;
+    padding-left: 2%;
+    padding-top: 2%;
+    margin-right: 1%;
+    text-align: left;
+    max-height: 91%;
+}
+
+.postTitle {
+    font-size: 0.8em;
+    margin-right: 1%;
+}
+
+.postArticle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.3em;
+    margin-right: 1%;
+}
+
+.postDesc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5em;
+    color: #2D353D;
+    margin-top: 5px;
+    margin-right: 1%;
+}
+
+.postDes a:link {
+    font-size: 0.3em;
+    text-decoration: none;
+    color: #DF665C;
+}
+
+.postDes a:visited {
+    text-decoration: none;
+}
+
+.postDes a:hover {
+    text-decoration: underline;
+}
+
+.postDes a:active {
+    text-decoration: underline;
+}
+
+.social a:link {
+    text-decoration: none;
+    font-size: 0.5em;
+    color: #DF665C
+}
+
+.social a:visited {
+    text-decoration: none;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
+
+.social a:active {
+    text-decoration: underline;
+}
+
+.signUp {
+    margin-top: 5%;
+    background-image: url(https://images.unsplash.com/photo-1578261313043-ea8712de9c27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signUpTitle {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.signUpEmail {
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.signUpbutton {
+    background-color: transparent;
+    color: White;
+    min-height: 40px;
+    min-width: 80px;
+    width: 150px;
+    height: auto;
+    border-radius: 6px;
+    margin-left: 3%;
+}
+
+.footerLink {
+    background-color: #3A4050;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.copyRight {
+    margin-right: 15%;
+    font-size: 0.7em;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.social {
+    margin-top: 10px;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: white;
+    color: #3A4050;
+}
+
+.fa-twitter {
+    background: white;
+    color: #3A4050;
+}
+
+.fa-linkedin {
+    background: white;
+    color: #3A4050;
+}
+
+.fa-dribbble {
+    background: white;
+    color: #3A4050;
+}
+
+.fa-rss {
+    background: white;
+    color: #3A4050;
+}
+
+.designed {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+}
+
+.nam {
+    color: #DF665C
 }
